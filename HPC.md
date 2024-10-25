@@ -4,6 +4,10 @@
 
 ## Set HPC ENVs
 
+**~** means the home directory of the user `/home/username`
+
+```bash
+
 copy this to your `~/.bashrc` file
     
 ```bash
