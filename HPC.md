@@ -13,6 +13,18 @@ copy this to your `~/.bashrc` file
 ```bash
 export XDG_CACHE_HOME=/your/path/to/cache
 ```
+
+```bash
+source ~/.bashrc
+```
+
+verfiy the path is set correctly
+
+```bash
+echo $XDG_CACHE_HOME
+```
+
+
 ## Useful commands
 
 
