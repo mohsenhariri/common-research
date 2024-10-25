@@ -42,4 +42,6 @@ or copy
 cat ~/.ssh/keyname.pub
 copy content to server in path: ~/.ssh/authorized_keys
 
+5. ssh config file
+
 

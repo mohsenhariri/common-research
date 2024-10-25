@@ -1,0 +1,9 @@
+# Your GitHub key 
+
+
+
+
+Host hpc
+  HostName pioneer.case.edu
+  User CaseId
+  IdentityFile ~/.ssh/keyname
