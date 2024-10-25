@@ -2,7 +2,15 @@
 
 
 
+## Set HPC ENVs
+
+
+export XDG_CACHE_HOME=/your/path/to/cache
+
 ## Useful commands
+
+
+
 
 
 resource allocation
@@ -35,3 +43,11 @@ then run the bash script to install miniconda
 * https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html
 
 go to this link ot find the latest version of miniconda
+
+
+```
+
+
+create a new conda environment
+
+```bash
