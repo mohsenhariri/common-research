@@ -65,7 +65,28 @@ go to this link ot find the latest version of miniconda
 
 ```
 
+check Conda envs
+
+```bash
+conda env list
+```
 
 create a new conda environment
 
+
 ```bash
+conda create --name env_name python=3.12.3
+```
+
+activate the conda environment
+
+```bash
+conda activate env_name
+```
+
+install packages
+
+
+
+
+
