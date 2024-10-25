@@ -4,9 +4,11 @@
 
 ## Set HPC ENVs
 
-
+copy this to your `~/.bashrc` file
+    
+```bash
 export XDG_CACHE_HOME=/your/path/to/cache
-
+```
 ## Useful commands
 
 
