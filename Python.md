@@ -18,16 +18,18 @@
 ## HPC
 
 * set a ssh key pair (public and private) for your machine and HPC account.
-1. 
-
+1. create a new ssh key pair
    use `ssh-keygen -o -a 75 -t ed25519 -f ~/.ssh/keyname -C "email"`
 
+* set a passhphrase
 
-2. test agent is running
+
+
+1. test agent is running
 
 	eval "$(ssh-agent -s)"
 
-3. add new key to SSH agent
+2. add new key to SSH agent
 
 ssh-add ~/.ssh/keyname
 
