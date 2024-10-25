@@ -18,7 +18,9 @@
 ## HPC
 
 * set a ssh key pair (public and private) for your machine and HPC account.
-1. use `ssh-keygen -o -a 75 -t ed25519 -f ~/.ssh/keyname -C "email"`
+1. 
+
+   use `ssh-keygen -o -a 75 -t ed25519 -f ~/.ssh/keyname -C "email"`
 
 
 2. test agent is running
@@ -31,6 +33,8 @@ ssh-add ~/.ssh/keyname
 
 4. copy ssh public key to remote
 
+remote ip: HPC ip
+username: Case ID
 
 ssh-copy-id -i ~/.ssh/keyname.pub username@remote_ip
 
