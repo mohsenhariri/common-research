@@ -1,9 +1,8 @@
 # Your GitHub key 
 
-
-
-
 Host hpc
+  UseKeychain yes
+  AddKeysToAgent yes
   HostName pioneer.case.edu
   User CaseId
   IdentityFile ~/.ssh/keyname
