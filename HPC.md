@@ -88,5 +88,16 @@ install packages
 
 
 
+remove env completely
 
+```bash
+conda remove --name env_name --all
+```
+
+update conda base
+
+```bash
+
+conda update -n base -c defaults conda
+```
 
