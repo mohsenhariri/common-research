@@ -18,23 +18,11 @@
 ## HPC
 
 * set a ssh key pair (public and private) for your machine and HPC account.
-1. create a new ssh key pair
-   use `ssh-keygen -o -a 75 -t ed25519 -f ~/.ssh/keyname -C "email"`
+1. use `ssh-keygen -o -a 75 -t ed25519 -f ~/.ssh/keyname -C "email"`
 
-* set a passhphrase
-
-
-2. set propoer permission for ssh key
-
-`chmod 600 ~/.ssh/keyname`
-
-
-add reference to linux permission here (what is 600?)
-
-3. test agent is running
+2. test agent is running
 
 	eval "$(ssh-agent -s)"
-
 
 3. add new key to SSH agent
 
@@ -42,19 +30,18 @@ ssh-add ~/.ssh/keyname
 
 4. copy ssh public key to remote
 
-remote ip: HPC ip (pioneer.case.edu)
-username: Case ID
-
 
 ssh-copy-id -i ~/.ssh/keyname.pub username@remote_ip
 
 or copy 
 cat ~/.ssh/keyname.pub
-copy content to server in path: ~/.ssh/authorized_keys (this path is on HPC)
+copy content to server in path: ~/.ssh/authorized_keys
 
-5. ssh config file
+6. (Apple Users Only) Store passphrase in the Keychain
 
+For latest version of MacOS (12.0 Monterey)
+ssh-add --apple-use-keychain ~/.ssh/keyname
 
-path: `~/.ssh/config`
-
+Versions of MacOS older than 12.0 Monterey, use:
+ssh-add -K ~/.ssh/keyname
 
