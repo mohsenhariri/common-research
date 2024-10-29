@@ -30,14 +30,13 @@ ssh-add ~/.ssh/keyname
 
 4. copy ssh public key to remote
 
-
 ssh-copy-id -i ~/.ssh/keyname.pub username@remote_ip
 
 or copy 
 cat ~/.ssh/keyname.pub
 copy content to server in path: ~/.ssh/authorized_keys
 
-6. (Apple Users Only) Store passphrase in the Keychain
+5. (Apple Users Only) Store passphrase in the Keychain
 
 For latest version of MacOS (12.0 Monterey)
 ssh-add --apple-use-keychain ~/.ssh/keyname
