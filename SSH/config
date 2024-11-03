@@ -1,0 +1,19 @@
+# GitHub
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/githubKey
+
+# HPC, Linux Users
+Host hpc
+  HostName pioneer.case.edu
+  User CaseId
+  IdentityFile ~/.ssh/keyname
+
+# HPC, Apple Users
+Host hpc
+  UseKeychain yes
+  AddKeysToAgent yes
+  HostName pioneer.case.edu
+  User CaseId
+  IdentityFile ~/.ssh/keyname
