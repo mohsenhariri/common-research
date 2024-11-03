@@ -1,7 +1,6 @@
 # HPC Commands
 
 
-
 ## Set HPC ENVs
 
 copy this to your `~/.bashrc` file
@@ -9,10 +8,8 @@ copy this to your `~/.bashrc` file
 ```bash
 export XDG_CACHE_HOME=/your/path/to/cache
 ```
+
 ## Useful commands
-
-
-
 
 
 resource allocation
@@ -22,7 +19,6 @@ resource allocation
 srun -A vxc204_aisc -p aisc -c 24 --gres=gpu:1 --mem=64G --time=9:50:00 --pty bash
 
 ```
-
 
 
 ## Conda Environment

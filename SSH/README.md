@@ -7,7 +7,7 @@ The ssh config file is used to store configurations for SSH connections. This fi
 To set up a SSH key pair for your machine and GitHub account follow [this link](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 
 
-### Set up SSH Key Pair for HPC
+## Set up SSH Key Pair for HPC
 1. Generate a new SSH key pair:
     ```bash
     ssh-keygen -o -a 75 -t ed25519 -f ~/.ssh/keyname -C "email"
