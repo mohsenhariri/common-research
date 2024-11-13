@@ -50,3 +50,13 @@ Refer to the [Git documentation](https://git-scm.com/book/en/v2) for more detail
     ```
 
 6. **Create a Pull Request**: Create a pull request from your forked repo to the original repo.
+
+
+
+## Commit Messages
+
+When you are working on an issue, reference the issue number in your **commit message**.
+
+- Work in progress: `git commit -m "WIP #issue: description"`
+- Fix an issue: `git commit -m "Fixes #issue: description"`
+- use `[skip ci]` in the commit message to skip CI checks.
