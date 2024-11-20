@@ -56,3 +56,10 @@ And your conda environment should be displayed.
 ### create a new conda environment
 
 ```bash
+conda create --name "environment_name" python=3.12.3
+```
+Use
+```bash
+conda activate "environment_name"
+```
+To enter your virtual environment
