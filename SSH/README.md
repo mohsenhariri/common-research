@@ -20,7 +20,8 @@ To set up a SSH key pair for your machine and GitHub account follow [this link](
     ```bash
     ssh-add ~/.ssh/keyname
     ```
-4. Copy the SSH public key to the HPC server:
+4. Add the contents of `https://github.com/mohsenhariri/common-research/blob/main/SSH/config` to your `~/.ssh/config` file
+5. Copy the SSH public key to the HPC server:
     ```bash
     ssh-copy-id -i ~/.ssh/keyname.pub username@remote_ip
     ```
@@ -30,7 +31,7 @@ To set up a SSH key pair for your machine and GitHub account follow [this link](
     ```
     Then add the content to the server's `~/.ssh/authorized_keys` file.
 
-5. (Apple Users Only) Store the passphrase in the Keychain:
+6. (Apple Users Only) Store the passphrase in the Keychain:
     - For macOS 12.0 Monterey and later:
         ```bash
         ssh-add --apple-use-keychain ~/.ssh/keyname
